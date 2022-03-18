@@ -21,9 +21,8 @@ function foo(a, b) {
     }
 
     for (let key in _aDictionary) {
-        if (!_bDictionary[key])
-            return false;
-        if (_bDictionary[key] != _aDictionary[key])
+
+        if (!_bDictionary[key] || _bDictionary[key] != _aDictionary[key])
             return false;
     }
 
