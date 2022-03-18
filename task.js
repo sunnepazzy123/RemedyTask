@@ -5,7 +5,7 @@ function foo(a, b) {
     if (a.length === 0) return false;
 
     for (let i = 0; i < a.length; i++) {
-        const key = a[i].toString();
+        const key = a[i];
         if (_aDictionary[key])
             _aDictionary[key] += 1;
         else
@@ -13,7 +13,7 @@ function foo(a, b) {
     }
 
     for (let i = 0; i < b.length; i++) {
-        const key = b[i].toString();
+        const key = b[i];
         if (_bDictionary[key])
             _bDictionary[key] += 1;
         else
