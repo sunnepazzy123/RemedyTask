@@ -34,3 +34,12 @@ console.log(foo('abc', 'abcd'));
 console.log(foo('abc', 'abde'));
 console.log(foo('abca', 'abcd'));
 console.log(foo('bca', 'adbc'));
+
+// a     | b     | foo
+// ----------------------
+// abc   | abcd  | true
+// abc   | abde  | false
+// abca  | abcd  | false
+// bca   | adbc  | true
+
+
