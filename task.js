@@ -1,6 +1,6 @@
 function foo(a, b) {
-    const _aDictionary = {};
-    const _bDictionary = {};
+    const _aDictionary = new Map();
+    const _bDictionary = new Map();
 
     if (a.length === 0) return false;
 
@@ -21,7 +21,6 @@ function foo(a, b) {
     }
 
     for (let key in _aDictionary) {
-
         if (!_bDictionary[key] || _bDictionary[key] != _aDictionary[key])
             return false;
     }
@@ -33,6 +32,7 @@ console.log(foo('abc', 'abcd'));
 console.log(foo('abc', 'abde'));
 console.log(foo('abca', 'abcd'));
 console.log(foo('bca', 'adbc'));
+
 
 // a     | b     | foo
 // ----------------------
