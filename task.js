@@ -1,6 +1,6 @@
 function foo(a, b) {
     
-    const [_aDictionary, _bDictionary] = [new Map(), new Map()];
+    const [_aDictionary, _bDictionary] = [{}, {}];
 
     if (a.length === 0) return false;
 
